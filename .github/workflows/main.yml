@@ -44,8 +44,6 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags: 
-            rodrigoandrade08/api-produto:latest
-            rodrigoandrade08/api-produto:${{github.run_number}}
+          tags: rodrigoandrade08/api-produto:latest
         
       
