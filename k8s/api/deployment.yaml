@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: api-produto
 spec:
+  replicas: 20
   selector:
     matchLabels:
       app: api
@@ -13,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api-produto
-        image: rodrigoandrade08/api-produto:v1
+        image: rodrigoandrade08/api-produto
         resources:
           limits:
             memory: "128Mi"
